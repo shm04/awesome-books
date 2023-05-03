@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  width: 80%;
+}
+
+.books-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+  border-bottom: solid 2px gray;
+}
+
+.li-title {
+  margin: 10px 0;
+}
+
+.li-text {
+  margin: 10px 0;
+}
+
+.remove-btn {
+  margin-bottom: 10px;
+}
+
+.book-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: fit-content;
+}
+
+.book-input button {
+  align-self: flex-start;
+}
