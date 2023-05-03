@@ -40,8 +40,10 @@ class Books {
       const li = document.createElement('li');
       li.classList.add('list-item');
       li.innerHTML = `
+      <div class="books-info">
         <h2 class="li-title">${book.title}</h2>
         <p class="li-text">${book.author}</p>
+      </div>
         <button class="remove-btn" id="${index}">Remove</button>
       `;
       list.appendChild(li);
@@ -56,8 +58,8 @@ class Books {
 const books = new Books();
 
 addButton.addEventListener('click', () => {
-  const inputOneValue = inputOne.value;
-  const inputTwoValue = inputTwo.value;
+  const inputOneValue = `"${inputOne.value}"`;
+  const inputTwoValue = `by ${inputTwo.value}`;
 
   if (inputOneValue === '' || inputTwoValue === '') {
     const existingErrorMsg = booksSection.querySelector('.error-msg');
