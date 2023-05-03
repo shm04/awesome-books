@@ -12,13 +12,13 @@ body {
 }
 
 .main-container h1 {
-    font-family: 'Crimson Text', serif;
-    font-size: 45px;
+  font-family: 'Crimson Text', serif;
+  font-size: 45px;
 }
 
 .books-section {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .books-list {
@@ -38,20 +38,20 @@ body {
 }
 
 .books-info {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .li-title {
   font-family: 'Nanum Myeongjo', serif;
   font-size: 25px;
-  margin: 10px 0 15px 0 ;
+  margin: 10px 0 15px 0;
 }
 
 .li-text {
   font-family: 'Charmonman', cursive;
   font-size: 17px;
-  margin: 5px 0 0 15px
+  margin: 5px 0 0 15px;
 }
 
 .remove-btn {
@@ -66,9 +66,9 @@ body {
 }
 
 .input-title {
-    align-self: center;
-    font-family: 'Crimson Text', serif;
-    font-size: 45px;
+  align-self: center;
+  font-family: 'Crimson Text', serif;
+  font-size: 45px;
 }
 
 .book-input button {
