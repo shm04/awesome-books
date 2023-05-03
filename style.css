@@ -6,6 +6,19 @@ body {
 
 .main-container {
   width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container h1 {
+  font-family: 'Crimson Text', serif;
+  font-size: 45px;
+}
+
+.books-section {
+  display: flex;
+  width: 100%;
 }
 
 .books-list {
@@ -14,31 +27,50 @@ body {
   gap: 20px;
   list-style: none;
   padding: 0;
+  width: 100%;
 }
 
 .list-item {
+  display: flex;
   border-bottom: solid 2px gray;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.books-info {
+  display: flex;
+  align-items: center;
 }
 
 .li-title {
-  margin: 10px 0;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 25px;
+  margin: 10px 0 15px 0;
 }
 
 .li-text {
-  margin: 10px 0;
+  font-family: 'Charmonman', cursive;
+  font-size: 17px;
+  margin: 5px 0 0 15px;
 }
 
 .remove-btn {
-  margin-bottom: 10px;
+  justify-content: flex-end;
 }
 
 .book-input {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: fit-content;
+  width: 50%;
+}
+
+.input-title {
+  align-self: center;
+  font-family: 'Crimson Text', serif;
+  font-size: 45px;
 }
 
 .book-input button {
-  align-self: flex-start;
+  align-self: flex-end;
 }
