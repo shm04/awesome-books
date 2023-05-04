@@ -1,7 +1,58 @@
 body {
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border-bottom: solid 1px;
+}
+
+.nav-title {
+  font-family: 'Kanit', sans-serif;
+  font-size: 35px;
+  margin: 10px 0;
+}
+
+.line {
+  border-right: solid 1px;
+  padding-right: 20px;
+}
+
+#list {
+  color: blue;
+  text-decoration: underline;
+}
+
+.sections-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sections-list a {
+  text-decoration: none;
+  color: #000;
+}
+
+.sections-list a:hover {
+  text-decoration: underline;
+}
+
+.date-time {
+  align-self: flex-end;
+  font-family: 'Roboto', sans-serif;
+  margin: 20px 50px 0 0;
 }
 
 .main-container {
@@ -9,11 +60,29 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto 0;
+}
+
+#text-link {
+  color: inherit;
+}
+
+#text-link:hover {
+  color: blue;
 }
 
 .main-container h1 {
   font-family: 'Crimson Text', serif;
   font-size: 45px;
+}
+
+.main-text {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  border: solid 1px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
 }
 
 .books-section {
@@ -58,11 +127,12 @@ body {
   justify-content: flex-end;
 }
 
-.book-input {
-  display: flex;
+.form-container {
+  display: none;
   flex-direction: column;
-  gap: 10px;
-  width: 50%;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0;
 }
 
 .input-title {
@@ -71,6 +141,81 @@ body {
   font-size: 45px;
 }
 
+.error-msg {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  border: solid 1px red;
+  color: red;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.book-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 130%;
+}
+
+.book-input input {
+  height: 25px;
+}
+
+.book-input input::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  padding: 5px 2px;
+}
+
+.contact-section {
+  display: none;
+  margin: auto 0;
+  flex-direction: column;
+}
+
+.contact-title {
+  font-family: 'Crimson Text', serif;
+  font-size: 45px;
+}
+
+.contact-section p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.contact-section ul {
+  list-style: circle;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 20px;
+}
+
+.footer {
+  border-top: solid 1px;
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  width: 90%;
+  font-size: 20px;
+  padding-left: 50px;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  padding: 5px 7px;
+  border: solid 1px gray;
+  border-radius: 10px;
+}
+
 .book-input button {
   align-self: flex-end;
+}
+
+button:hover {
+  border: solid 1px #000;
+  background-color: #000;
+  color: white;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
