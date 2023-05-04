@@ -76,7 +76,7 @@ class Books {
   updateDateTime() {
     const now = new Date();
     const options = {
-      weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric',
+      weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric',
     };
     const dateTimeString = now.toLocaleDateString('en-US', options);
     this.dateTime.textContent = dateTimeString;
@@ -112,7 +112,7 @@ addButton.addEventListener('click', () => {
 books.writeBooks();
 
 books.updateDateTime();
-setInterval(books.updateDateTime, 1000);
+setInterval(() => books.updateDateTime(), 1000);
 
 // Listeners to navbar sections
 
