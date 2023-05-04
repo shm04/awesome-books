@@ -8,23 +8,52 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Charmonman&family=Crimson+Text:ital,wght@1,700&family=Nanum+Myeongjo:wght@800&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman&family=Crimson+Text:ital,wght@1,700&family=Kanit&family=Nanum+Myeongjo:wght@800&family=Oswald:wght@300&family=Roboto&display=swap" rel="stylesheet">
 <body>
+    <nav class="navbar">
+        <h1 class="nav-title">Awesome Books</h1>
+        <ul class="sections-list">
+            <li  class="line"><a id="list" href="#">List</a></li>
+            <li class="line"><a id="add-new" href="#">Add new</a></li>
+            <li><a id="contact" href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="date-time">
+        <!-- Dynamically displaying date and time -->
+    </section>
     <section class="main-container">
     <h1>All awesome books</h1>
+    <p class="main-text">Add a new book in <a id="text-link" href="#">add new</a> section!</p>
     <div class="books-section">
         <!-- Dynamically displaying the books -->
     </div>
-    <form class="book-input">
-        <h2 class="input-title">Add a new book</h2>
-        <input class="input-one" type="text" placeholder="Title" required>
-        <input class="input-two" type="text" placeholder="Author" required>
-        <button class="add-button" type="button">Add</button>
-    </form>
     </section>
-    
+    <section class="form-container">
+        <h2 class="input-title">Add a new book</h2>
+        <div class="error-msg-div"></div>
+        <form class="book-input">
+            <input class="input-one" type="text" placeholder="Title" required>
+            <input class="input-two" type="text" placeholder="Author" required>
+            <button class="add-button" type="button">Add</button>
+        </form>  
+    </section>
+    <section class="contact-section">
+        <h1 class="contact-title">Contact information</h1>
+        <p>Do you have any questions or you just want to say "Hello"?<br>You can reach out to us!</p>
+        <ul>
+            <li>Our e-mail: mail@mail.com</li>
+            <li>Our phone number: 0192758493</li>
+            <li>Our address: Streetname 22, 84503 City, Country</li>
+        </ul>
+    </section>
+    <section class="footer">
+        <p>Copyright MIT License</p>
+    </section>
 </body>
 <script src="script.js"></script>
 </html>
