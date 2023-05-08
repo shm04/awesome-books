@@ -111,7 +111,7 @@ Sebastián Hernández
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] ** No future features **
+- [ ] **No future features**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
